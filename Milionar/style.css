@@ -1,0 +1,147 @@
+body{
+    background-color: rgb(15, 15, 15);
+    font-family: 'Roboto Mono', monospace;
+    user-select: none;
+    color: rgb(210, 210, 210);
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#question{
+    font-size: 48px;
+    border: 6px solid #5C2285;
+    box-shadow: 5px 10px 3px rgb(55, 18, 82);
+    width: 40%;
+    padding: 1%;
+    margin: auto;
+}
+
+#answerContainer{
+    margin-top: 5%;
+}
+
+.answers{
+    cursor: pointer;
+    font-size: 36px;
+    margin-top: 1%;
+    border: 4px solid #5C2285;
+    height: 10%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all .2s ease;
+}
+
+.answers:hover{
+    transform: scale(1.1);
+}
+
+#money{
+    display: grid;
+    font-size: 32px;
+    position: absolute;
+    border: 4px solid #5C2285;
+    left: 5%;
+    text-align: left;
+}
+
+.checkPoint{
+    color: #FAB13C;
+}
+
+.endMenu{
+    width: 50%;
+    height: 40%;
+    border: 7px solid #5C2285;
+    background-color: rgb(15, 15, 15);
+    box-shadow: 6px 11px 4px rgb(55, 18, 82);
+    border-radius: 5%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    font-size: 72px;
+    margin-top: 10%;
+}
+
+.restart{
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(15, 15, 15);
+    border: 5px solid #5C2285;
+    border-radius: 5%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-bottom: 12%;
+    position: absolute;
+    text-align: center;
+    font-size: 44px;
+    transition: all .2s ease;
+}
+
+.restart:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 780px) {
+    #money {
+        font-size: 24px;
+        position: relative;
+        border: 4px solid #5C2285;
+        text-align: center;
+        left: 0%;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .answers{
+        font-size: 28px;
+    }
+    #question{
+        margin-top: 2%;
+        font-size: 36px;
+    }
+    .endMenu{
+        font-size: 54px;
+    }
+    .restart{
+        margin-bottom: 30%;
+    }
+  }
+
+@media (max-width: 470px) {
+    #money {
+        font-size: 16px;
+        position: relative;
+        border: 4px solid #5C2285;
+        text-align: center;
+        left: 0%;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .answers{
+        font-size: 18px;
+    }
+    #question{
+        font-size: 24px;
+    }
+    .endMenu{
+        font-size: 38px;
+    }
+    .restart{
+        margin-bottom: 60%;
+    }
+  }
